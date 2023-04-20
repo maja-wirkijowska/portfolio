@@ -1,4 +1,5 @@
 # PORTFOLIO - Maja Wirkijowska
+---
 
 Portfolio
-  - made up of single class projects
+- BraceMatcher: reads data.txt file, determines if parantheses (and other braces) are evenly matched
