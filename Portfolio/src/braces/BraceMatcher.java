@@ -21,8 +21,8 @@ public class BraceMatcher {
                     result.append(braceMatcher(line));
                 }
             }
-            //System.out.println(result);
-            System.out.println("Test passed: " + isTestPassed(result.toString()));
+            System.out.println(result);
+            //System.out.println("Test passed: " + isTestPassed(result.toString()));
 
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
@@ -68,10 +68,9 @@ public class BraceMatcher {
         return (open == '[' && close == ']') || (open == '{' && close == '}')
                 || (open == '(' && close == ')') || (open == '<' && close == '>');
     }
-
-    private static boolean isTestPassed(String result) {
-        String expectedResult = "1 0 1 1 0 0 0 1 ";
-        //System.out.println(expectedResult);
-        return result.equals(expectedResult);
-    }
+    // private static boolean isTestPassed(String result) {
+    //     String expectedResult = "1 0 1 1 0 0 0 1 ";
+    //     //System.out.println(expectedResult);
+    //     return result.equals(expectedResult);
+    // }
 }
